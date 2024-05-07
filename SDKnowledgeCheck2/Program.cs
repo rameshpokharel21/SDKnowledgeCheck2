@@ -32,6 +32,7 @@ do
             recordList.Add(myClass);
             
         }
+        isValid = true;
     }
     catch (Exception ex)
     {
@@ -44,8 +45,7 @@ do
 Console.WriteLine("\nHere is the list of objects created:\n");
 foreach (var record in recordList)
 {
-    Console.WriteLine($"{JsonSerializer.Serialize(record)}");
-
+    Console.WriteLine(record);
 
 }
 
